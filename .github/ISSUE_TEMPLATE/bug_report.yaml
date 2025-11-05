@@ -13,14 +13,16 @@ body:
   - type: input
     id: version
     attributes:
-      label: In welcher Version des Prüfportals wurde der Fehler beobachtet?
+      label: In welcher Version des Prüfportals wurde der Fehler beobachtet (Versionsnummer ganz unten im Prüfportal)?
   - type: dropdown
     id: approute
     attributes:
       label: In welchem Schritt ist der Fehler aufgetreten?
       multiple: false
       options:
-        - Außerhalb der Prüfung
+        - Dashboard
+        - Projekte/Prozesse verwalten
+        - Nutzereinstellungen
         - Anwendungsfallbeschreibung      
         - Schutzbedarfsanalyse
         - Bewertung
@@ -28,6 +30,7 @@ body:
         - Validierung     
         - Gesamtbewertung
         - Ergebnis
+        - Sonstiges
   - type: textarea
     id: what-happened
     attributes:
