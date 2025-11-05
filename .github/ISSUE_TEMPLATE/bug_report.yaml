@@ -1,0 +1,55 @@
+name: Fehler melden
+description: Einen Fehler im Prüfportal melden
+title: "[Fehler]: "
+labels: ["Fehler"]
+projects: ["Mission-KI/4"]
+assignees:
+  - hasentopf
+body:
+  - type: markdown
+    attributes:
+      value: |
+       Ein Fehler im Prüfportal? 😱
+  - type: input
+    id: version
+    attributes:
+      label: In welcher Version des Prüfportals wurde der Fehler beobachtet?
+  - type: dropdown
+    id: approute
+    attributes:
+      label: In welchem Schritt ist der Fehler aufgetreten?
+      multiple: false
+      options:
+        - Außerhalb der Prüfung
+        - Anwendungsfallbeschreibung      
+        - Schutzbedarfsanalyse
+        - Bewertung
+        - Evidenzen
+        - Validierung     
+        - Gesamtbewertung
+        - Ergebnis
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: Was ist passiert?
+      description: Bitte auch beschreiben was hätte passieren sollen. Es können auch Screenshots eingefügt werden.
+      placeholder: Bitte beschreiben
+      value: "**Schritte zum Reproduzieren des Fehlers**\n\n\n**Was hätte passieren sollen?**\n\n\n**Was ist passiert? (Fehler)**"
+    validations:
+      required: true
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: In welchem Browser ist der Fehler aufgetreten?
+      multiple: true
+      options:
+        - Firefox
+        - Chrome
+        - Safari
+        - Microsoft Edge
+  - type: textarea
+    id: logs
+    attributes:
+      label: Fehlermeldung / Log
+      description: Bitte hier die Fehlermeldung oder den Log.
+      render: shell
