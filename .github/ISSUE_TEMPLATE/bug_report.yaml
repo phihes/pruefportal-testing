@@ -40,6 +40,15 @@ body:
       value: "**Schritte zum Reproduzieren des Fehlers**\n\n\n**Was hätte passieren sollen?**\n\n\n**Was ist passiert? (Fehler)**"
     validations:
       required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: Bitte Screenshots einfügen falls sinnvoll.
+      placeholder: Hier Bilder per copy + past einfügen
+      value: "Hier Bilder per copy + past einfügen"
+    validations:
+      required: false
   - type: dropdown
     id: browsers
     attributes:
