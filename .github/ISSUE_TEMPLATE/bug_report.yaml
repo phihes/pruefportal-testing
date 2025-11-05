@@ -44,9 +44,9 @@ body:
     id: screenshots
     attributes:
       label: Screenshots
-      description: Bitte Screenshots einfügen falls sinnvoll.
-      placeholder: Hier Bilder per copy + past einfügen
-      value: "Hier Bilder per copy + past einfügen"
+      description: Bitte Screenshots per copy & paste einfügen falls sinnvoll.
+      placeholder: Hier Bilder per copy + paste einfügen
+      value: ""
     validations:
       required: false
   - type: dropdown
