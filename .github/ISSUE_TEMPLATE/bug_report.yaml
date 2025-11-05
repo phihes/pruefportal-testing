@@ -46,7 +46,7 @@ body:
       label: Screenshots
       description: Bitte Screenshots per copy & paste einfügen falls sinnvoll.
       placeholder: Hier Bilder per copy + paste einfügen
-      value: ""
+      value: " "
     validations:
       required: false
   - type: dropdown
